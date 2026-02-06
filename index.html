@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Patient Case File</title>
+  <title>Relationship Case File</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌻</text></svg>">
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
@@ -154,14 +154,13 @@
 <body>
   <div class="file" id="screen">
     <h1>Patient Case File</h1>
-    <div class="tag">Confidential</div>
+    <div class="tag">Confidential - Just for the two of us</div>
     <div class="divider"></div>
-    <div class="label">Patient</div>
-    <div class="content">One (1) very lucky boyfriend</div>
-    <div class="label">Attending Physician</div>
-    <div class="content">You 🩺</div>
+    <div class="label">Parties Involved</div>
+    <div class="content">Two people navigating distance with effort, humour and a shared
+        sense of "this is worth it"</div>
     <div class="btn-container">
-        <button onclick="next()">Open Case</button>
+        <button onclick="next()">Review Relationship History</button>
     </div>
   </div>
   <script>
@@ -185,39 +184,42 @@
     for(let i=0; i<5; i++) setTimeout(createHeart, i * 200);
     const screens = [
         `
-        <h1>Chief Complaint</h1>
+        <h1>Relationship History</h1>
         <div class="tag">Ongoing</div>
         <div class="divider"></div>
         <div class="content">
-            Persistent warmth in the chest area when thinking about one
-             incredibly intelligent, kind, and beautiful future doctor.
+            Fifteen months in
+            The course has been non-liner and at times unconventional.
+            Marked by learning curves, recalibrations and periods of emotional
+            distance - not instability, but growth.
+             .
         </div>
         <div class="btn-container">
-            <button onclick="next()">Review Symptoms</button>
+            <button onclick="next()">Review Current Status</button>
         </div>
         `,
         `
-        <h1>Symptoms</h1>
+        <h1>Current Status</h1>
         <div class="tag">Well Documented</div>
         <div class="divider"></div>
         <div class="content">
-            • Smiling for no reason<br>
-            • Feeling calm just by hearing your voice<br>
-            • Wanting to share every good moment with you<br>
-            • Complete certainty that you're my favorite person
+            • Over recent weeks, significant improvement noted.<br>
+            • Comfort increasing.<br>
+            • Conversations flow more easily.<br>
+            • Efforts feels mutual<br>
+            • Silence no longer feels heavy.
         </div>
         <div class="btn-container">
-            <button onclick="next()">Assessment</button>
+            <button onclick="next()">Review Chief Concern</button>
         </div>
         `,
         `
-        <h1>Assessment</h1>
+        <h1>Chief Concern</h1>
         <div class="tag">Stable</div>
         <div class="divider"></div>
         <div class="content">
-            Condition appears chronic and irreversible.<br><br>
-            Patient reports feeling safe, supported, 
-            and genuinely happy in your presence.
+            Valentine's Day plans currently undefined due to geographical<br><br>
+            constraints.
         </div>
         <div class="btn-container">
             <button onclick="next()">Final Recommendation</button>
@@ -228,10 +230,11 @@
         <div class="tag">High Priority</div>
         <div class="divider"></div>
         <div class="content">
-            Proceed with Valentine's Day together.<br>
-            Laugh a lot.<br>
-            Eat something good with patient.<br><br>
-            <strong>Will you be Patient's Valentine?</strong>
+            A virual Valentine's evening.<br>
+            Same time. Same screen.<br>
+            A movie we both want to watch,<br>
+            with dinner and wine - together, from wherever we are.<br><br>
+            <strong>Would you like to be my Valentine?</strong>
         </div>
         <div class="btn-container">
             <button onclick="yes()">Accept 💌</button>
@@ -239,28 +242,26 @@
         </div>
         `,
         `
-        <h1>Case Closed</h1>
+        <h1>Review Complete</h1>
         <div class="tag">Approved</div>
         <div class="divider"></div>
         <div class="content">
-            Recommendation accepted.<br><br>
-            Prognosis: Extremely good.<br>
-            Thank you, Doctor ❤️
+            Note : You are given the task of finalizing the movie.<br>
+            Thank you, Arnab ❤️
         </div>
         <div class="btn-container">
-            <button onclick="next()">View Treatment Plan</button>
+            <button onclick="next()">Let's do this</button>
         </div>
         `,
         `
-        <h1>Treatment Plan</h1>
-        <div class="tag">Valentine's Day</div>
+        <h1>Final details</h1>
+        <div class="tag">Virtual Valentine's Day Date</div>
         <div class="divider"></div>
         <div class="content">
             <strong>Date:</strong> February 14<br>
             <strong>Time:</strong> 8:00 PM<br>
-            <strong>Location:</strong> FaceTime<br><br>
-            Side effects may include: Battery drainage, endless smiling, 
-            and counting down the days until we finally reunite.<br><br>
+            <strong>Location:</strong> Google Meet<br><br>
+            Counting down the days.<br><br>
             I can't wait to see your face on my screen 💖
         </div>
         `
@@ -286,14 +287,14 @@
             <div class="tag" style="background: #fee2e2; color: #991b1b;">Action Forbidden</div>
             <div class="divider"></div>
             <div class="content">
-                Wait! Your medical license doesn't cover rejection of this specific patient. <br><br>
+                Wait! Rejection not supported for this relationship. <br><br>
                 Look how sad he'll be:
                 <div class="image-grid">
                     <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHpueGswamN2ZGNrNmFvbm9ycDJ6Z2FvMGFjOWRreHdtazR5ZWlqeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9Y5BbDSkSTiY8/giphy.gif">
                     <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ODZuZzIydmNzaXdmMmlyODdhaHdsbTZyaTVtbWdhMGdpMzN5cXp1NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/BumgtJKvWFffVt2FSV/giphy.gif">
                 </div>
                 <br>
-                Please reconsider the correct medical procedure.
+                Please reconsider - I have been quietly hoping.
             </div>
             <div class="btn-container">
                 <button onclick="yes()">Accept 💌</button>
@@ -303,4 +304,5 @@
     }
   </script>
 </body>
+
 </html>
